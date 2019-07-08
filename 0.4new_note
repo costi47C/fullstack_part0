@@ -1,0 +1,17 @@
+title new note
+
+note right of User: User writes in the textbox
+User -> Browser: User clicks submit
+Browser -> Server : sends the User input to the server \n through a HTTP POST request
+note right of Server : server saves the input
+Server --> Browser : 302 found
+note over Browser : browser reloads the notes page
+Browser -> Server : GET /notes
+Server --> Browser : HTML code
+Browser -> Server : GET main.css
+Server --> Browser : main.css
+Browser -> Server : GET main.js
+Server --> Browser : main.js
+Browser -> Server : GET data.json
+Server --> Browser : data.js
+note right of User : User sees the notes with his input included
