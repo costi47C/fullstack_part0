@@ -1,0 +1,14 @@
+title single page app
+
+note right of User : User goes to /spa
+User -> Browser : 
+Browser -> Server : GET /spa
+Server --> Browser : HTML code
+Browser -> Server : GET main.css
+Server --> Browser : main.css
+Browser -> Server : GET spa.js
+Server --> Browser : spa.js
+note right of Browser : browser executes JS code
+Browser -> Server : GET data.json
+Server --> Browser : data.json
+note left of Browser : browser displays notes to user
