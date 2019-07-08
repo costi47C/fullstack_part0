@@ -1,0 +1,10 @@
+title new note spa
+
+note right of User : User writes new comment
+User -> Browser: 
+Browser -> Server : POST new_note_spa
+Server --> Browser : 201 created
+note right of Browser
+    browser updates the notes list
+    without reloading page
+end note
